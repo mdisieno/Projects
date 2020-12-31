@@ -1,15 +1,36 @@
 import pygame, sys
-pygame.init()
+from pygame.math import Vector2
 
+#----Classes/Attributes-----------------
+class FRUIT:
+    def _init_(self):
+        self.x = 5
+        self.y = 4
+        #Vector for fruit position
+        self.pos = Vector2(self.x,self.y)
+
+    def drawFruit(self):
+        #Create the Fruit (x,y,w,h)
+        fruitRect = pygame.Rect(self.pos.x, self.pos.y, cellSize, cellSize)
+        #Draw the Fruit (surface,color,rectangle)
+        pygame.draw.Rect(screen,pygame.color('Red'),fruitRect)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pygame.init()
 #----Parts/Attributes-----------------
-#window build
-width = 400
-height = 500
+#General Var
 framerate = 60
-screen = pygame.display.set_mode((width, height))
+#Screen/Grid layout for snake movement
+cellSize = 40
+cellNumber = 20
+#Squared at 20 x 40px cells = 800px^2 
+screen = pygame.display.set_mode((cellNumber*cellSize, cellNumber*cellSize))
 pygame.display.set_caption("Python Snake Game by Michael Disieno")
 #clock to vary proc speed in process.
 clock = pygame.time.Clock()
+
+#Fruit
+fruit = FRUIT()
 
 #Snake
 snake = pygame.Surface((50,200))
@@ -18,8 +39,6 @@ snakeHorizontalPos = 200
 snakeVerticalPos = 250
 snakeRect = snake.get_rect(center = (snakeHorizontalPos,snakeVerticalPos))
 
-#Draw the Apple
-apple = pygame.Rect(100,200,100,100)
 
 #----/Parts/Attributes-----------------
 
@@ -30,20 +49,17 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-            
-
     #----Draw/Control-----------------            
     #Draw all elements
+    #Draw the Snake
+    screen.blit(snake,snakeRect)  
+    #Display of Game
     screen.fill((23,255,147))
     
-
-    #Draw the Snake
-    screen.blit(snake,snakeRect)
-    snakeRect.right += 1
-    #Draw the Apple
-    pygame.draw.ellipse(screen,pygame.Color(('Red')),apple)
-    #Display of Game
+    
+    #where it brakes, no pos but there is a pos
+    fruit.drawFruit()
+    
     pygame.display.update()
     clock.tick(framerate)
-
     #----/Draw/Control-----------------         

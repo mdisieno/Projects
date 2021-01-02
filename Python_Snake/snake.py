@@ -11,7 +11,8 @@ class FRUIT:
 
     def drawFruit(self):
         #Create the Fruit (x,y,w,h)
-        fruitRect = pygame.Rect(self.pos.x, self.pos.y, cellSize, cellSize)
+        #print(self.pos)
+        fruitRect = pygame.Rect((self.x,self.y),(cellSize,cellSize))
         #Draw the Fruit (surface,color,rectangle)
         pygame.draw.Rect(screen,pygame.color('Red'),fruitRect)
 

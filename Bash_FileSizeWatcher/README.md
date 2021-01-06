@@ -1,0 +1,1 @@
+This is a basic script that I will soon build up with the capability to monitor files within certain folders. I'm thinking of adding curses and designating it for logs. The primary reason for this was to monitor logs within my VPS that are constantly filling my system.

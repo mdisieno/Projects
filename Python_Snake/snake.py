@@ -59,7 +59,7 @@ while True:
     
     
     #where it brakes, no pos but there is a pos
-    #why you break?
+    #Kind of stuck here still, I'll figure it out.
     fruit.drawFruit()
     
     pygame.display.update()

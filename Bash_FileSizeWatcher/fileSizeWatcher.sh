@@ -44,7 +44,7 @@ function checkIfDialogIsInstalled() {
         echo "Its not there"
         read -p "Would you like to install it? (Y/N): " $userInput
 #!!!!-YOU ARE HERE AT THE MOMENT-!!!!
-        if (($userInput = "Y")) || (($userInput = "y"));then
+        if [$userInput == "Y" | [$userInput == "y"];then
             echo "Fart poops"
         fi
     fi

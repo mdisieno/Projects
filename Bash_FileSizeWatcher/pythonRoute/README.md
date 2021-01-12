@@ -1,0 +1,1 @@
+This is a possible migration to a python based route to further expand on certain options. Bear in mind this is purely a concept in point does not recieve the same attention as the basic bash version. Once I have finished cleaning the bash version I will definitely move on to this one.

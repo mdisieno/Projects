@@ -1,0 +1,1 @@
+This container will use a simple script that monitors the respective bitcoin you decide and handles either a webhook or direct to pushbullet notification. I had something like this before but I felt it would be best to container and distribute it for others.

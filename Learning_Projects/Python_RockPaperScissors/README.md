@@ -1,0 +1,1 @@
+Super easy rock paper scissors program. I did it merely to get keep fresh on Python. Feel free to ask for more documentation or notation if you have any questions.

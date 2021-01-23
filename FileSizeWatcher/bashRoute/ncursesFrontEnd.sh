@@ -1,14 +1,7 @@
 #!/bin/bash
 ######################################################################
-# A simple Bash script, that will watch a file and delete and rebuild
-# once it reaches a certain size. I built this primarily for my VPS.
-# by Mike Disieno
-#
-# Rev 1.0 takes in user input for folder and ownership and makes a new
-# file in that location with the respective settings needed for that 
-# user to access it and modify it. I will likely move this to ncurses 
-# later.
-#
+# This provides an ncurses based front in for when the user does not
+# include arguments or options.
 ######################################################################
 ######################################################################
 #-Variables
@@ -43,6 +36,7 @@ function checkIfDialogIsInstalled() {
     if ncurses=$false; then
         echo "Its not there"
         read -p "Would you like to install it? (Y/N): " $userInput
+
 #!!!!-YOU ARE HERE AT THE MOMENT-!!!!
         if [$userInput == "Y" | [$userInput == "y"];then
             echo "Fart poops"

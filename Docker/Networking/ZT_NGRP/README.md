@@ -5,5 +5,6 @@ ZT_NGRP - A container that routes all nginx reverse proxy requests via NGINX Pro
 * This pairs beautifully with CloudFlare's free tier. You can use their CDN to mask and protect the VPS, which is then protecting your clients, which is then protected by ZT's IP allocation/tunneling.
 
 Credit to the Nginx reverse proxy goes to JC21: https://nginxproxymanager.com/
+
 This package will include the self contained package from JLesage: https://hub.docker.com/r/jlesage/nginx-proxy-manager
 

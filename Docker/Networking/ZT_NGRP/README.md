@@ -8,3 +8,5 @@ Credit to the Nginx reverse proxy goes to JC21: https://nginxproxymanager.com/
 
 This package will include the self contained package from JLesage: https://hub.docker.com/r/jlesage/nginx-proxy-manager
 
+The Wireguard configuration and use will be handled via PiVPN: https://www.pivpn.io/
+

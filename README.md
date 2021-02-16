@@ -1,1 +1,1 @@
-This is some projects that I am working on slowly but surely. I want to get some proper practice in development as well as new languages and some of these are based on youtube videos with the proper credit associated.
+This is some projects that I am working on slowly but surely. I want to get some proper practice in development as well as new languages and some of these are based on youtube videos with the proper credit associated. Once these projects are completed, they will be moved to their own repos to make downloading easier.
